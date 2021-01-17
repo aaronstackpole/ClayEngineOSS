@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DirectXTK">
+      <UniqueIdentifier>{e71ad96d-a03c-47d7-800c-f092e0e3b4c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Audio">
+      <UniqueIdentifier>{7e577da0-e48b-4c77-9e59-341b70c0a831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Inc">
+      <UniqueIdentifier>{e7eb55c8-4cda-4266-ad0c-2a3a3c9e4f3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Inc\Shared">
+      <UniqueIdentifier>{680af757-a833-4191-a15a-c2004da5b601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Src">
+      <UniqueIdentifier>{9eb0cdfd-f7b5-436a-b2c9-d65ab2de348d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Src\Shaders">
+      <UniqueIdentifier>{d4ef65cb-543b-418b-8a58-f66b6d4071cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Src\Shared">
+      <UniqueIdentifier>{fd5e2493-420d-4d0c-b920-96b479e047b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Src\Shaders\Compiled">
+      <UniqueIdentifier>{6bf4331c-8b1c-42ab-83fb-91ac6ca4e53e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Src\Shaders\Shared">
+      <UniqueIdentifier>{f3aa0806-6709-4c6b-9ffb-9ecffada364d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Src\Shaders\Symbols">
+      <UniqueIdentifier>{e527214e-41d7-4e70-9cc9-c7238324d15e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
