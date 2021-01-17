@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e00cd640-1b84-432b-907f-ed106a4fb9c6}</ProjectGuid>
+    <RootNamespace>ClayEngineLibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\SolutionCommon.props" />
+    <Import Project="..\PlatformCommon.props" />
+    <Import Project="..\ProjectLanguageStandard17.props" />
+    <Import Project="..\DirectXTKDefaults.props" />
+    <Import Project="..\ClayEngineIncludes.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\SolutionCommon.props" />
+    <Import Project="..\PlatformCommon.props" />
+    <Import Project="..\ProjectLanguageStandard17.props" />
+    <Import Project="..\DirectXTKDefaults.props" />
+    <Import Project="..\ClayEngineIncludes.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Audio\SoundCommon.h" />
+    <ClInclude Include="Audio\WaveBankReader.h" />
+    <ClInclude Include="Audio\WAVFileReader.h" />
+    <ClInclude Include="ClayEngine.h" />
+    <ClInclude Include="DX11Pipeline.h" />
+    <ClInclude Include="DX11Resources.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Private\AlignedNew.h" />
+    <ClInclude Include="Private\Bezier.h" />
+    <ClInclude Include="Private\BinaryReader.h" />
+    <ClInclude Include="Private\ConstantBuffer.h" />
+    <ClInclude Include="Private\DDS.h" />
+    <ClInclude Include="Private\DemandCreate.h" />
+    <ClInclude Include="Private\EffectCommon.h" />
+    <ClInclude Include="Private\Geometry.h" />
+    <ClInclude Include="Private\LoaderHelpers.h" />
+    <ClInclude Include="Private\PlatformHelpers.h" />
+    <ClInclude Include="Private\SDKMesh.h" />
+    <ClInclude Include="Private\SharedResourcePool.h" />
+    <ClInclude Include="Private\vbo.h" />
+    <ClInclude Include="Public\Audio.h" />
+    <ClInclude Include="Public\BufferHelpers.h" />
+    <ClInclude Include="Public\CommonStates.h" />
+    <ClInclude Include="Public\DDSTextureLoader.h" />
+    <ClInclude Include="Public\DirectXHelpers.h" />
+    <ClInclude Include="Public\Effects.h" />
+    <ClInclude Include="Public\GamePad.h" />
+    <ClInclude Include="Public\GeometricPrimitive.h" />
+    <ClInclude Include="Public\GraphicsMemory.h" />
+    <ClInclude Include="Public\Keyboard.h" />
+    <ClInclude Include="Public\Model.h" />
+    <ClInclude Include="Public\Mouse.h" />
+    <ClInclude Include="Public\PostProcess.h" />
+    <ClInclude Include="Public\PrimitiveBatch.h" />
+    <ClInclude Include="Public\ScreenGrab.h" />
+    <ClInclude Include="Public\SimpleMath.h" />
+    <ClInclude Include="Public\SpriteBatch.h" />
+    <ClInclude Include="Public\SpriteFont.h" />
+    <ClInclude Include="Public\VertexTypes.h" />
+    <ClInclude Include="Public\WICTextureLoader.h" />
+    <ClInclude Include="Public\XboxDDSTextureLoader.h" />
+    <ClInclude Include="RenderSystem.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="WindowClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio\AudioEngine.cpp" />
+    <ClCompile Include="Audio\DynamicSoundEffectInstance.cpp" />
+    <ClCompile Include="Audio\SoundCommon.cpp" />
+    <ClCompile Include="Audio\SoundEffect.cpp" />
+    <ClCompile Include="Audio\SoundEffectInstance.cpp" />
+    <ClCompile Include="Audio\SoundStreamInstance.cpp" />
+    <ClCompile Include="Audio\WaveBank.cpp" />
+    <ClCompile Include="Audio\WaveBankReader.cpp" />
+    <ClCompile Include="Audio\WAVFileReader.cpp" />
+    <ClCompile Include="DX11Pipeline.cpp" />
+    <ClCompile Include="DX11Resources.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Private\AlphaTestEffect.cpp" />
+    <ClCompile Include="Private\BasicEffect.cpp" />
+    <ClCompile Include="Private\BasicPostProcess.cpp" />
+    <ClCompile Include="Private\BinaryReader.cpp" />
+    <ClCompile Include="Private\BufferHelpers.cpp" />
+    <ClCompile Include="Private\CommonStates.cpp" />
+    <ClCompile Include="Private\DDSTextureLoader.cpp" />
+    <ClCompile Include="Private\DebugEffect.cpp" />
+    <ClCompile Include="Private\DGSLEffect.cpp" />
+    <ClCompile Include="Private\DGSLEffectFactory.cpp" />
+    <ClCompile Include="Private\DirectXHelpers.cpp" />
+    <ClCompile Include="Private\DualPostProcess.cpp" />
+    <ClCompile Include="Private\DualTextureEffect.cpp" />
+    <ClCompile Include="Private\EffectCommon.cpp" />
+    <ClCompile Include="Private\EffectFactory.cpp" />
+    <ClCompile Include="Private\EnvironmentMapEffect.cpp" />
+    <ClCompile Include="Private\GamePad.cpp" />
+    <ClCompile Include="Private\GeometricPrimitive.cpp" />
+    <ClCompile Include="Private\Geometry.cpp" />
+    <ClCompile Include="Private\GraphicsMemory.cpp" />
+    <ClCompile Include="Private\Keyboard.cpp" />
+    <ClCompile Include="Private\Model.cpp" />
+    <ClCompile Include="Private\ModelLoadCMO.cpp" />
+    <ClCompile Include="Private\ModelLoadSDKMESH.cpp" />
+    <ClCompile Include="Private\ModelLoadVBO.cpp" />
+    <ClCompile Include="Private\Mouse.cpp" />
+    <ClCompile Include="Private\NormalMapEffect.cpp" />
+    <ClCompile Include="Private\PBREffect.cpp" />
+    <ClCompile Include="Private\PBREffectFactory.cpp" />
+    <ClCompile Include="Private\PrimitiveBatch.cpp" />
+    <ClCompile Include="Private\ScreenGrab.cpp" />
+    <ClCompile Include="Private\SimpleMath.cpp" />
+    <ClCompile Include="Private\SkinnedEffect.cpp" />
+    <ClCompile Include="Private\SpriteBatch.cpp" />
+    <ClCompile Include="Private\SpriteFont.cpp" />
+    <ClCompile Include="Private\ToneMapPostProcess.cpp" />
+    <ClCompile Include="Private\VertexTypes.cpp" />
+    <ClCompile Include="Private\WICTextureLoader.cpp" />
+    <ClCompile Include="RenderSystem.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="WindowClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Private\Shaders\Common.fxh" />
+    <None Include="Private\Shaders\CompileShaders.cmd" />
+    <None Include="Private\Shaders\Lighting.fxh" />
+    <None Include="Private\Shaders\PBRCommon.fxh" />
+    <None Include="Private\Shaders\PixelPacking_Velocity.hlsli" />
+    <None Include="Private\Shaders\Structures.fxh" />
+    <None Include="Private\Shaders\Utilities.fxh" />
+    <None Include="Private\TeapotData.inc" />
+    <None Include="Public\SimpleMath.inl" />
+    <None Include="Ticker.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Private\Shaders\AlphaTestEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\BasicEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\DebugEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\DGSLEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\DGSLLambert.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\DGSLPhong.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\DGSLUnlit.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\DualTextureEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\EnvironmentMapEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\NormalMapEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\PBREffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\PostProcess.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\SkinnedEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\SpriteEffect.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Private\Shaders\ToneMap.fx">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

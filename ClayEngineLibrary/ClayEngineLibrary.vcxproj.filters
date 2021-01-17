@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Sprite.h">
+      <Filter>ClayEngine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\BufferHelpers.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\CommonStates.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\DirectXHelpers.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Effects.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\GeometricPrimitive.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\GraphicsMemory.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Model.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\PostProcess.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\PrimitiveBatch.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\ScreenGrab.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\SpriteBatch.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\SpriteFont.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\VertexTypes.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\WICTextureLoader.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\SoundCommon.h">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\WaveBankReader.h">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\WAVFileReader.h">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\EffectCommon.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\PlatformHelpers.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\AlignedNew.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\Bezier.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\BinaryReader.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\DDS.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\DemandCreate.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\Geometry.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\LoaderHelpers.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\SDKMesh.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\SharedResourcePool.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\vbo.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\GamePad.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Keyboard.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Mouse.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\SimpleMath.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\Audio.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\DDSTextureLoader.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Public\XboxDDSTextureLoader.h">
+      <Filter>DirectXTK\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Private\ConstantBuffer.h">
+      <Filter>DirectXTK\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Resources.h">
+      <Filter>ClayEngine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Pipeline.h">
+      <Filter>ClayEngine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClass.h">
+      <Filter>ClayEngine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ClayEngine.h">
+      <Filter>ClayEngine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSystem.h">
+      <Filter>ClayEngine\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Sprite.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioEngine.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\DynamicSoundEffectInstance.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\SoundCommon.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\SoundEffect.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\SoundEffectInstance.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\SoundStreamInstance.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\WaveBank.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\WaveBankReader.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\WAVFileReader.cpp">
+      <Filter>DirectXTK\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\AlphaTestEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\BasicEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\BasicPostProcess.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\BufferHelpers.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\CommonStates.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\DebugEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\DGSLEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\DGSLEffectFactory.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\DirectXHelpers.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\DualPostProcess.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\DualTextureEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\EffectCommon.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\EffectFactory.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\EnvironmentMapEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Model.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\ModelLoadCMO.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\ModelLoadSDKMESH.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\ModelLoadVBO.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\NormalMapEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\PBREffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\PBREffectFactory.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\PrimitiveBatch.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\ScreenGrab.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\SkinnedEffect.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\SpriteBatch.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\SpriteFont.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\ToneMapPostProcess.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\VertexTypes.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\WICTextureLoader.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\BinaryReader.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\GamePad.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Geometry.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Keyboard.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\Mouse.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\SimpleMath.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\DDSTextureLoader.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\GeometricPrimitive.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Private\GraphicsMemory.cpp">
+      <Filter>DirectXTK\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Resources.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Pipeline.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClass.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSystem.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ClayEngine">
+      <UniqueIdentifier>{158324eb-b7c2-4a02-8688-44aae6a03ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK">
+      <UniqueIdentifier>{2f6563ab-6890-4320-a3b9-78525841d51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Audio">
+      <UniqueIdentifier>{566dd015-ff45-47ea-b735-ae61647d8cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClayEngine\Public">
+      <UniqueIdentifier>{4f6fcb64-040b-4947-90e2-d07bd93509f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClayEngine\Private">
+      <UniqueIdentifier>{bf31b52e-8df3-4c6b-bcbe-8b36f33d7fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Public">
+      <UniqueIdentifier>{0a77846a-f781-400f-a027-19ffdb8d2b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Private">
+      <UniqueIdentifier>{b7cf6ff4-cb97-4dd5-ad36-8c7b424d82af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Private\Shaders">
+      <UniqueIdentifier>{ebaab16d-7196-4dab-ac0b-7fed4b0634c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTK\Private\Shaders\Shared">
+      <UniqueIdentifier>{aa858824-c3f1-4785-8e18-f3fe23585560}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Private\TeapotData.inc">
+      <Filter>DirectXTK\Private</Filter>
+    </None>
+    <None Include="Public\SimpleMath.inl">
+      <Filter>DirectXTK\Public</Filter>
+    </None>
+    <None Include="Private\Shaders\CompileShaders.cmd">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\Common.fxh">
+      <Filter>DirectXTK\Private\Shaders\Shared</Filter>
+    </None>
+    <None Include="Private\Shaders\PBRCommon.fxh">
+      <Filter>DirectXTK\Private\Shaders\Shared</Filter>
+    </None>
+    <None Include="Private\Shaders\PixelPacking_Velocity.hlsli">
+      <Filter>DirectXTK\Private\Shaders\Shared</Filter>
+    </None>
+    <None Include="Private\Shaders\Structures.fxh">
+      <Filter>DirectXTK\Private\Shaders\Shared</Filter>
+    </None>
+    <None Include="Private\Shaders\Utilities.fxh">
+      <Filter>DirectXTK\Private\Shaders\Shared</Filter>
+    </None>
+    <None Include="Private\Shaders\Lighting.fxh">
+      <Filter>DirectXTK\Private\Shaders\Shared</Filter>
+    </None>
+    <None Include="Private\Shaders\AlphaTestEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\BasicEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\DebugEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\DGSLEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\DGSLLambert.hlsl">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\DGSLPhong.hlsl">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\DGSLUnlit.hlsl">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\DualTextureEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\EnvironmentMapEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\NormalMapEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\PBREffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\PostProcess.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\SkinnedEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\SpriteEffect.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Private\Shaders\ToneMap.fx">
+      <Filter>DirectXTK\Private\Shaders</Filter>
+    </None>
+    <None Include="Ticker.inl">
+      <Filter>ClayEngine\Public</Filter>
+    </None>
+  </ItemGroup>
+</Project>
