@@ -9,31 +9,29 @@
 _CE_BEGIN
 using TexturePtr = Microsoft::WRL::ComPtr<ID3D11ShaderResourceView>;
 using ResourcePtr = Microsoft::WRL::ComPtr<ID3D11Resource>;
+using SpriteBatchPtr = DirectX::SpriteBatch*;
+using SpriteFontPtr = DirectX::SpriteFont*;
+using Rect = DirectX::SimpleMath::Rectangle;
 using Frames = std::vector<RECT>;
-using DirectX::SpriteBatch;
-using DirectX::SpriteFont;
-using DirectX::SimpleMath::Rectangle;
-using DirectX::SimpleMath::Vector2;
-using DirectX::SimpleMath::Vector4;
 
 struct ISprite
 {
 	virtual ISprite* Clone() const = 0;
 	virtual void Update(float elapsedTime) = 0;
-	virtual void Draw(SpriteBatch* spriteBatch) = 0;
+	virtual void Draw(SpriteBatchPtr spriteBatch) = 0;
 };
 
 class SpriteBase
 {
 protected:
 	bool is_active;
-	Vector2 position;
-	Vector2 origin;
-	Vector2 offset;
-	Vector2 scale;
+	DirectX::SimpleMath::Vector2 position;
+	DirectX::SimpleMath::Vector2 origin;
+	DirectX::SimpleMath::Vector2 offset;
+	DirectX::SimpleMath::Vector2 scale;
 	float rotation;
 	float depth;
-	Vector4 alpha;
+	DirectX::SimpleMath::Vector4 alpha;
 
 public:
 	SpriteBase();
@@ -42,14 +40,14 @@ public:
 	virtual void SetActive(bool active);
 
 	void SetPosition(float x, float y);
-	void SetPosition(Vector2 position);
+	void SetPosition(DirectX::SimpleMath::Vector2 position);
 	void SetOrigin(float x, float y);
-	void SetOrigin(Vector2 origin);
+	void SetOrigin(DirectX::SimpleMath::Vector2 origin);
 	void SetOffset(float x, float y);
-	void SetOffset(Vector2 offset);
+	void SetOffset(DirectX::SimpleMath::Vector2 offset);
 	void SetScale(float scale);
 	void SetScale(float x, float y);
-	void SetScale(Vector2 scale);
+	void SetScale(DirectX::SimpleMath::Vector2 scale);
 	void SetRotation(float rotation);
 	void SetDepth(float depth);
 	void SetAlpha(float alpha);
@@ -59,7 +57,7 @@ public:
 class SpriteStrip : public SpriteBase, ISprite
 {
 	TexturePtr texture{};
-	Rectangle source{};
+	Rect source{};
 	Frames frames{};
 
 	double frame_elapsed_time;
@@ -72,7 +70,7 @@ class SpriteStrip : public SpriteBase, ISprite
 	bool has_static;
 
 public:
-	SpriteStrip(TexturePtr texturePtr, Rectangle sourceRect, uint32_t frameCount, bool hasStatic);
+	SpriteStrip(TexturePtr texturePtr, Rect sourceRect, uint32_t frameCount, bool hasStatic);
 
 	virtual void SetActive(bool active) override;
 
@@ -82,23 +80,23 @@ public:
 
 	virtual ISprite* Clone() const override { return new SpriteStrip(*this); }
 	virtual void Update(float elapsedTime) override;
-	virtual void Draw(SpriteBatch* spriteBatch) override;
+	virtual void Draw(SpriteBatchPtr spriteBatch) override;
 };
 
 
 class SpriteString : public SpriteBase, ISprite
 {
-	SpriteFont* font{};
+	SpriteFontPtr font{};
 	String string{};
 
 public:
-	SpriteString(SpriteFont* spriteFont, String initialString);
+	SpriteString(SpriteFontPtr spriteFont, String initialString);
 	
-	void SetFont(SpriteFont* fontPtr);
+	void SetFont(SpriteFontPtr fontPtr);
 	void SetString(String newString);
 
 	virtual ISprite* Clone() const override { return new SpriteString(*this); }
 	virtual void Update(float elapsedTime) override;
-	virtual void Draw(SpriteBatch* spriteBatch) override;
+	virtual void Draw(SpriteBatchPtr spriteBatch) override;
 };
 _CE_END

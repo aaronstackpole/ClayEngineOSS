@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Sprite.h">
+    <ClInclude Include="ClayEngine.h">
       <Filter>ClayEngine\Public</Filter>
     </ClInclude>
     <ClInclude Include="Public\BufferHelpers.h">
@@ -116,19 +116,28 @@
     <ClInclude Include="Private\ConstantBuffer.h">
       <Filter>DirectXTK\Private</Filter>
     </ClInclude>
-    <ClInclude Include="DX11Resources.h">
+    <ClInclude Include="RenderSystem.h">
       <Filter>ClayEngine\Public</Filter>
     </ClInclude>
-    <ClInclude Include="DX11Pipeline.h">
+    <ClInclude Include="ContentSystem.h">
       <Filter>ClayEngine\Public</Filter>
     </ClInclude>
     <ClInclude Include="WindowClass.h">
+      <Filter>ClayEngine\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>ClayEngine\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineCore.h">
       <Filter>ClayEngine\Public</Filter>
     </ClInclude>
-    <ClInclude Include="ClayEngine.h">
-      <Filter>ClayEngine\Public</Filter>
+    <ClInclude Include="Sprite.h">
+      <Filter>ClayEngine\Private</Filter>
     </ClInclude>
-    <ClInclude Include="RenderSystem.h">
+    <ClInclude Include="VoxelFarmThread.h">
+      <Filter>ClayEngine\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Services.h">
       <Filter>ClayEngine\Public</Filter>
     </ClInclude>
   </ItemGroup>
@@ -278,16 +287,22 @@
     <ClCompile Include="Private\GraphicsMemory.cpp">
       <Filter>DirectXTK\Private</Filter>
     </ClCompile>
-    <ClCompile Include="DX11Resources.cpp">
-      <Filter>ClayEngine\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="DX11Pipeline.cpp">
+    <ClCompile Include="VoxelFarmThread.cpp">
       <Filter>ClayEngine\Private</Filter>
     </ClCompile>
     <ClCompile Include="WindowClass.cpp">
       <Filter>ClayEngine\Private</Filter>
     </ClCompile>
     <ClCompile Include="RenderSystem.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentSystem.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineCore.cpp">
+      <Filter>ClayEngine\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Services.cpp">
       <Filter>ClayEngine\Private</Filter>
     </ClCompile>
   </ItemGroup>
@@ -392,9 +407,6 @@
     </None>
     <None Include="Private\Shaders\ToneMap.fx">
       <Filter>DirectXTK\Private\Shaders</Filter>
-    </None>
-    <None Include="Ticker.inl">
-      <Filter>ClayEngine\Public</Filter>
     </None>
   </ItemGroup>
 </Project>

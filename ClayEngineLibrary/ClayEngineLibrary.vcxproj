@@ -103,12 +103,12 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EngineCore.h" />
     <ClInclude Include="Audio\SoundCommon.h" />
     <ClInclude Include="Audio\WaveBankReader.h" />
     <ClInclude Include="Audio\WAVFileReader.h" />
     <ClInclude Include="ClayEngine.h" />
-    <ClInclude Include="DX11Pipeline.h" />
-    <ClInclude Include="DX11Resources.h" />
+    <ClInclude Include="ContentSystem.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Private\AlignedNew.h" />
     <ClInclude Include="Private\Bezier.h" />
@@ -145,10 +145,14 @@
     <ClInclude Include="Public\WICTextureLoader.h" />
     <ClInclude Include="Public\XboxDDSTextureLoader.h" />
     <ClInclude Include="RenderSystem.h" />
+    <ClInclude Include="Services.h" />
     <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="VoxelFarmThread.h" />
     <ClInclude Include="WindowClass.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EngineCore.cpp" />
     <ClCompile Include="Audio\AudioEngine.cpp" />
     <ClCompile Include="Audio\DynamicSoundEffectInstance.cpp" />
     <ClCompile Include="Audio\SoundCommon.cpp" />
@@ -158,8 +162,7 @@
     <ClCompile Include="Audio\WaveBank.cpp" />
     <ClCompile Include="Audio\WaveBankReader.cpp" />
     <ClCompile Include="Audio\WAVFileReader.cpp" />
-    <ClCompile Include="DX11Pipeline.cpp" />
-    <ClCompile Include="DX11Resources.cpp" />
+    <ClCompile Include="ContentSystem.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
@@ -203,7 +206,9 @@
     <ClCompile Include="Private\VertexTypes.cpp" />
     <ClCompile Include="Private\WICTextureLoader.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
+    <ClCompile Include="Services.cpp" />
     <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="VoxelFarmThread.cpp" />
     <ClCompile Include="WindowClass.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -216,7 +221,6 @@
     <None Include="Private\Shaders\Utilities.fxh" />
     <None Include="Private\TeapotData.inc" />
     <None Include="Public\SimpleMath.inl" />
-    <None Include="Ticker.inl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Private\Shaders\AlphaTestEffect.fx">

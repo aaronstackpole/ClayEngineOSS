@@ -7,43 +7,46 @@
 #define _CE_BEGIN namespace ClayEngine {
 #define _CE_END }
 
-#define _CE_SERVICE_BEGIN namespace ClayEngine { namespace Services {
-#define _CE_SERVICE_END } }
-
 #define _CE_NETWORK_BEGIN namespace ClayEngine { namespace Network {
 #define _CE_NETWORK_END } }
 
-#define _CE_PLATFORM_BEGIN namespace ClayEngine { namespace Platform {
-#define _CE_PLATFORM_END } }
-
+#include <sstream>
 using String = std::wstring;
-
-constexpr LONG default_window_width = 1920;
-constexpr LONG default_window_height = 1080;
-constexpr auto default_device_lost = true;
 
 //TODO: File system constants loaded here?
 
-inline void PrintHR(std::wstring message, HRESULT hr)
+static const bool default_device_lost = true;
+static const LONG default_window_width = 1920L;
+static const LONG default_window_height = 1080L;
+static const UINT c_flip_present = 0x00000001U;
+static const UINT c_allow_tearing = 0x00000002U;
+static const UINT c_enable_hdr = 0x00000004U;
+
+inline void WriteLine(String message)
 {
-    std::wcout << L"[" << std::setfill(L'0') << std::setw(8) << std::this_thread::get_id()
-        << L"] " << message << L" HRESULT: 0x" << std::setfill(L'0') << std::setw(8) << std::hex << hr << std::endl;
+    std::wcout << L"[" << std::setfill(L'0') << std::setw(8) << std::this_thread::get_id() << L"] " << message << std::endl;
+}
+inline void PrintHR(String message, HRESULT hr)
+{
+    std::wstringstream ss;
+    ss << message << L" HRESULT: 0x" << std::setfill(L'0') << std::setw(8) << std::hex << hr;
+    WriteLine(ss.str());
 }
 
 class com_exception : public std::exception
 {
     HRESULT result;
+
 public:
     com_exception(HRESULT hr) noexcept : result(hr) {}
 
     const char* what() const override
     {
         static char s_str[64] = {};
-        sprintf_s(s_str, "Failure with HRESULT of %08X", static_cast<unsigned int>(result));
+        sprintf_s(s_str, "COM Exception HRESULT: %08X", static_cast<unsigned int>(result));
         return s_str;
     }
 };
-
 inline void ThrowIfFailed(HRESULT hr)
 {
     if (FAILED(hr))
