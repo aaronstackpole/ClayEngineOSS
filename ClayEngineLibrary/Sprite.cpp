@@ -3,6 +3,7 @@
 #include "Sprite.h"
 
 using namespace DirectX;
+using namespace DirectX::SimpleMath;
 
 namespace ClayEngine
 {
@@ -100,7 +101,7 @@ void ClayEngine::SpriteBase::SetAlpha(float _alpha)
 #pragma endregion
 
 #pragma region SpriteStrip
-ClayEngine::SpriteStrip::SpriteStrip(TexturePtr texturePtr, Rectangle sourceRect, uint32_t frameCount, bool hasStatic)
+ClayEngine::SpriteStrip::SpriteStrip(TexturePtr texturePtr, Rect sourceRect, uint32_t frameCount, bool hasStatic)
 	: texture{ texturePtr }
 	, source{ sourceRect }
 	, frame_count{ frameCount }
@@ -170,7 +171,7 @@ void ClayEngine::SpriteStrip::Update(float elapsedTime)
 	}
 }
 
-void ClayEngine::SpriteStrip::Draw(SpriteBatch* spriteBatch)
+void ClayEngine::SpriteStrip::Draw(SpriteBatchPtr spriteBatch)
 {
 	assert(spriteBatch);
 
@@ -193,13 +194,13 @@ void ClayEngine::SpriteStrip::Draw(SpriteBatch* spriteBatch)
 #pragma endregion
 
 #pragma region SpriteString
-ClayEngine::SpriteString::SpriteString(SpriteFont* spriteFont, String initialString)
+ClayEngine::SpriteString::SpriteString(SpriteFontPtr spriteFont, String initialString)
 	: font{ spriteFont }
 	, string{ initialString }
 {
 }
 
-void ClayEngine::SpriteString::SetFont(SpriteFont* fontPtr)
+void ClayEngine::SpriteString::SetFont(SpriteFontPtr fontPtr)
 {
 	font = fontPtr;
 }
@@ -218,7 +219,7 @@ void ClayEngine::SpriteString::Update(float elapsedTime)
 	//m_origin = (m_font->MeasureString(m_string.c_str()) * 0.5F);
 }
 
-void ClayEngine::SpriteString::Draw(SpriteBatch* spriteBatch)
+void ClayEngine::SpriteString::Draw(SpriteBatchPtr spriteBatch)
 {
 	assert(spriteBatch);
 
