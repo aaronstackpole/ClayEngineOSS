@@ -20,11 +20,11 @@ struct Services
 			auto addr = reinterpret_cast<uint64_t>(ptr.get());
 
 			std::wstringstream ss;
-			ss << L"Adding Service by Key: " << key << L" Addr: 0x" << std::setfill(L'0') << std::setw(16) << std::hex << addr;
+			ss << L"Adding Service by Key: " << key << L" Addr: 0x" << std::setfill(L'0') << std::setw(12) << std::hex << addr;
 			WriteLine(ss.str());
 
 			services.emplace(key, addr);
-			return std::move(ptr);
+			return ptr;
 		}
 
 		throw std::exception("Service not created due to unique key constraint violation");
