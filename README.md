@@ -27,6 +27,8 @@ side commented out so it doesn't actually try to connect. The network code for t
 and a client to connect to it. Once that's done, nothing else happens, there are no send/recv calls implemented. If you want to see it 
 you can run the ClayEngineServer.exe and compile the client with the connect line uncommented and you can see the connection happen.
 
+EDIT: Actually, you'd also need to change the IP address of the server to connect to. This currently points at my router... :/
+
 January 2022 Update
 
 There has been a lot of work on this since I first published this project. Overall, this isn't even the same actual solution, I started
