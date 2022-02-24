@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClayEngineServer", "ClayEngineServer\ClayEngineServer.vcxproj", "{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PropertySheets", "PropertySheets", "{79C9C47B-4E43-49FA-BDCC-AC9F21757E4C}"
+	ProjectSection(SolutionItems) = preProject
+		ClayEngineClientCore.props = ClayEngineClientCore.props
+		ClayEngineLibraryCore.props = ClayEngineLibraryCore.props
+		ClayEngineOutput.props = ClayEngineOutput.props
+		ClayEngineServerCore.props = ClayEngineServerCore.props
+		PreprocessorPhysics.props = PreprocessorPhysics.props
+		PreprocessorVoxelFarm.props = PreprocessorVoxelFarm.props
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClayEngineLibrary", "ClayEngineLibrary\ClayEngineLibrary.vcxproj", "{604B545E-1435-4336-80CA-F5B841E567C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClayEngineClient", "ClayEngineClient\ClayEngineClient.vcxproj", "{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Physics|x64 = Debug_Physics|x64
+		Debug|x64 = Debug|x64
+		Release_Physics|x64 = Release_Physics|x64
+		Release|x64 = Release|x64
+		ReleaseTrace|x64 = ReleaseTrace|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Debug_Physics|x64.ActiveCfg = Debug|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Debug_Physics|x64.Build.0 = Debug|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Debug|x64.ActiveCfg = Debug|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Debug|x64.Build.0 = Debug|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Release_Physics|x64.ActiveCfg = Release|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Release_Physics|x64.Build.0 = Release|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Release|x64.ActiveCfg = Release|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.Release|x64.Build.0 = Release|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.ReleaseTrace|x64.ActiveCfg = Release|x64
+		{33D9CD1E-0F88-4CD3-BE4E-A8F64976A829}.ReleaseTrace|x64.Build.0 = Release|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Debug_Physics|x64.ActiveCfg = Debug|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Debug_Physics|x64.Build.0 = Debug|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Debug|x64.ActiveCfg = Debug|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Debug|x64.Build.0 = Debug|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Release_Physics|x64.ActiveCfg = Release|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Release_Physics|x64.Build.0 = Release|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Release|x64.ActiveCfg = Release|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.Release|x64.Build.0 = Release|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.ReleaseTrace|x64.ActiveCfg = Release|x64
+		{604B545E-1435-4336-80CA-F5B841E567C0}.ReleaseTrace|x64.Build.0 = Release|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Debug_Physics|x64.ActiveCfg = Debug|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Debug_Physics|x64.Build.0 = Debug|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Debug|x64.ActiveCfg = Debug|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Debug|x64.Build.0 = Debug|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Release_Physics|x64.ActiveCfg = Release|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Release_Physics|x64.Build.0 = Release|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Release|x64.ActiveCfg = Release|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.Release|x64.Build.0 = Release|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.ReleaseTrace|x64.ActiveCfg = Release|x64
+		{A5AF59DC-C670-4EF0-A5C1-49E9EB440503}.ReleaseTrace|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5779D17-4D93-47B1-A170-AE6FEACD23AD}
+	EndGlobalSection
+EndGlobal

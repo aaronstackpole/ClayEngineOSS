@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Private">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Public\Utility">
+      <UniqueIdentifier>{98d22f52-d61d-4c6b-8b41-b9d342241619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Utility">
+      <UniqueIdentifier>{e16e23ad-2e9c-44cf-b301-6670eca6b759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Graphics">
+      <UniqueIdentifier>{bb96f74f-6432-4df8-b4b9-bf937c9c7d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Graphics">
+      <UniqueIdentifier>{cd770d72-166e-4ce2-8f8d-39b6a542d3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\SimpleMath">
+      <UniqueIdentifier>{0e69c851-c85a-4e98-932a-f0e865b0dcd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\SimpleMath">
+      <UniqueIdentifier>{48257603-668b-4c2f-ac46-4e5636cd45b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetworkSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="ClayEngine.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Services.h">
+      <Filter>Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Strings.h">
+      <Filter>Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Storage.h">
+      <Filter>Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxel.h">
+      <Filter>Public\SimpleMath</Filter>
+    </ClInclude>
+    <ClInclude Include="Extensions.h">
+      <Filter>Public\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TimingSystem.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Public\SimpleMath</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11PrimitivePipeline.h">
+      <Filter>Public\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Textures.h">
+      <Filter>Public\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Resources.h">
+      <Filter>Public\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sensorium.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetworkSystem.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Storage.cpp">
+      <Filter>Private\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Private\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowSystem.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxel.cpp">
+      <Filter>Private\SimpleMath</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentSystem.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSystem.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="TimingSystem.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Private\SimpleMath</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11PrimitivePipeline.cpp">
+      <Filter>Private\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Resources.cpp">
+      <Filter>Private\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Textures.cpp">
+      <Filter>Private\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sensorium.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

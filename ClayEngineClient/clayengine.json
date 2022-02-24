@@ -1,0 +1,17 @@
+{
+  "control": {
+    "move_backward": "d",
+    "move_forward": "e",
+    "move_left": "s",
+    "move_right": "f"
+  },
+  "network": {
+    "block_buffer_size": 2000000,
+    "message_buffer_size": 2048,
+    "server_port": 10609
+  },
+  "video": {
+    "height": 1080,
+    "width": 1920
+  }
+}

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{91337dc5-0779-4976-be61-da305b70269b}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Assets\content">
+      <UniqueIdentifier>{a39c3aa2-a74d-4695-b250-4a5a962ddefd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\content\fonts">
+      <UniqueIdentifier>{2fcbec1b-bd18-4a1e-a1f9-d89df739a0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\content\sprites">
+      <UniqueIdentifier>{2c189363-122e-4c70-a50f-0f064f9d5fae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\json">
+      <UniqueIdentifier>{bf2dc806-dc69-468a-ab85-1f5b14276121}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="content\sprites\Cursor.dds">
+      <Filter>Assets\content\sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\UIElements.dds">
+      <Filter>Assets\content\sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\Pixel.dds">
+      <Filter>Assets\content\sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\GoldBox.dds">
+      <Filter>Assets\content\sprites</Filter>
+    </Image>
+    <Image Include="content\sprites\Controls.dds">
+      <Filter>Assets\content\sprites</Filter>
+    </Image>
+    <Image Include="EMPS.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\fonts\Consolas_24.spritefont">
+      <Filter>Assets\content\fonts</Filter>
+    </None>
+    <None Include="content\fonts\Mason_24.spritefont">
+      <Filter>Assets\content\fonts</Filter>
+    </None>
+    <None Include="content\fonts\Consolas_10.spritefont">
+      <Filter>Assets\content\fonts</Filter>
+    </None>
+    <None Include="content\fonts\Consolas_16.spritefont">
+      <Filter>Assets\content\fonts</Filter>
+    </None>
+    <None Include="content.json">
+      <Filter>Assets\json</Filter>
+    </None>
+    <None Include="clayengine.json">
+      <Filter>Assets\json</Filter>
+    </None>
+    <None Include="cursor.cur">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wWinMain.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="SquareChase.cpp" />
+    <ClCompile Include="ClientCoreSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="SquareChase.h" />
+    <ClInclude Include="resource.h">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientCoreSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ClayEngineClient.rc">
+      <Filter>Assets</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
